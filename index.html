@@ -18,7 +18,7 @@
   <script>
     async function load() {
       try {
-        const resp = await fetch('data/moon.chain');
+        const resp = await fetch('data/chain.dat');
         const text = await resp.text();
         const content = document.getElementById('content');
         content.innerHTML = '<pre>' + text.substring(0, 5000) + '</pre><p style="color: #ff0;">(últimos 5000 bytes de la cadena – actualiza cada 10s)</p>';
